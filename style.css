@@ -22,8 +22,14 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  position: fixed;
+  justify-content: space-evenly;
+  background-color: #fff;
+  border-bottom-left-radius: 20px;
+  width: 375px;
+  height: auto;
+  top: 0;
 }
 
 .header .logo {
@@ -45,21 +51,73 @@ body {
   padding-bottom: 14px;
 }
 
-.toolbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.menuBar {
+  display: block;
+  margin-right: 36px;
 }
 
-.toolbar img {
-  width: 24px;
-  height: 24px;
-  padding-right: 20px;
-  padding-top: 10px;
+.main-page .header .menuBar .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #6070ff;
 }
 
-.main-page .header .tool-social {
+.main-page .header .tool-social1 {
   display: none;
+}
+
+.main-page .header .tool {
+  position: fixed;
+  top: 0;
+  height: 718px;
+  width: 375px;
+  max-width: 100%;
+  border-bottom-left-radius: 50px;
+  backdrop-filter: blur(1px);
+  background: #6070ffe9;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  transition: all 100ms ease-in-out;
+  transform: scale(0);
+}
+
+.main-page .header .tool.active {
+  transform: scale(1);
+}
+
+.main-page .header .tool .clos-button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 2rem;
+  color: #fff;
+  padding-left: 300px;
+  padding-top: 30px;
+}
+
+.main-page .header .tool .tool-social {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  align-items: flex-start;
+  margin-top: 0;
+  gap: 40px;
+}
+
+.main-page .header .tool .tool-social .cont {
+  color: #fff;
+  text-decoration: none;
 }
 
 .container {
@@ -588,17 +646,28 @@ footer .submit:active {
     height: 72px;
   }
 
-  .header .toolbar .img-3 {
+  .main-page .header .tool.active {
+    transform: scale(0);
+  }
+
+  .menuBar {
     display: none;
   }
 
-  .main-page .header .tool-social {
-    list-style-type: none;
-    display: flex;
-    margin-right: 154px;
+  .main-page .header .tool .tool-social {
+    display: none;
   }
 
-  .main-page .header .tool-social li {
+  .main-page .header .tool-social1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin-right: 154px;
+    background-color: #fff;
+  }
+
+  .main-page .header .tool-social1 .cont1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 15px;
@@ -609,16 +678,17 @@ footer .submit:active {
     color: #344563;
     margin-right: 32px;
     transition: all 0.4s ease;
+    text-decoration: none;
   }
 
-  .main-page .header .tool-social li:hover {
+  .main-page .header .tool-social1 .cont1:hover {
     font-size: 18px;
     color: #6070ff;
   }
 
   .header .logo {
     margin-left: 155px;
-    margin-top: 25px;
+    margin-top: 15px;
     transition: all 0.4s ease;
   }
 
@@ -643,7 +713,6 @@ footer .submit:active {
     width: 600px;
     height: 122px;
     letter-spacing: 0.37px;
-    font-style: bold;
     margin-bottom: 0;
   }
 
