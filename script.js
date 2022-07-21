@@ -1,13 +1,19 @@
-const menuBar = document.querySelector('.menuBar');
-const toolSocial = document.querySelector('.tool-social');
-const n = 0;
+const menu = document.querySelector('.menubtn');
+const menuList = document.querySelector('.tool');
 
-menuBar.addEventListener('click', () => {
-  menuBar.classList.toggle('active');
-  toolSocial.classList.toggle('active');
+menu.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  menuList.classList.toggle('active');
 });
 
-document.querySelectorAll('.Line').forEach(n, () => n.addEventListener('click', () => {
-  menuBar.classList.remove('active');
-  toolSocial.classList.remove('active');
-}));
+const close = document.querySelector('.clos-button');
+
+close.addEventListener('click', () => {
+    menuList.classList.remove('active');
+});
+
+const lists = document.querySelector('.tool-social');
+
+lists.addEventListener('click', () => {
+    menuList.classList.remove('active');
+})
