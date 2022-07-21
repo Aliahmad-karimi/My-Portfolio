@@ -1,4 +1,4 @@
-const menu = document.querySelector('.menubtn');
+const menu = document.querySelector('.menuBar');
 const menuList = document.querySelector('.tool');
 
 menu.addEventListener('click', () => {
@@ -9,11 +9,11 @@ menu.addEventListener('click', () => {
 const close = document.querySelector('.clos-button');
 
 close.addEventListener('click', () => {
-    menuList.classList.remove('active');
+  menuList.classList.remove('active');
 });
 
 const lists = document.querySelector('.tool-social');
 
 lists.addEventListener('click', () => {
-    menuList.classList.remove('active');
-})
+  menuList.classList.remove('active');
+});

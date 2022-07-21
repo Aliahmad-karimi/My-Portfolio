@@ -51,22 +51,12 @@ body {
   padding-bottom: 14px;
 }
 
-.menubtn {
-  border: none;
-  background: none;
-  justify-content: center;
-}
-
-.menubtn:hover {
-  transform: scale(1.1);
-}
-
-.menubtn .menuBar {
+.menuBar {
   display: block;
   margin-right: 36px;
 }
 
-.main-page .header .menubtn .menuBar .bar {
+.main-page .header .menuBar .bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -656,15 +646,11 @@ footer .submit:active {
     height: 72px;
   }
 
-  .manubtn:hover {
-    display: none;
-  }
-
   .main-page .header .tool.active {
     transform: scale(0);
   }
 
-  .menubtn .menuBar {
+  .menuBar {
     display: none;
   }
 
