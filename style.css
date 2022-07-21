@@ -829,7 +829,8 @@ footer .submit:active {
   }
 
   .about-me {
-    width: 1440px;
+    flex-wrap: nowrap;
+    width: 1400px;
     height: 924px;
     border-top-right-radius: 100px;
   }
