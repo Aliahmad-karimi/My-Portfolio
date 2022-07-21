@@ -1,5 +1,6 @@
 const menuBar = document.querySelector('.menuBar');
 const toolSocial = document.querySelector('.tool-social');
+const n = 0;
 
 menuBar.addEventListener('click', () => {
   menuBar.classList.toggle('active');
