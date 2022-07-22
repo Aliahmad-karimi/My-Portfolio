@@ -275,6 +275,10 @@ body {
   padding-left: 0;
 }
 
+.sort .sort1 {
+  padding-left: 0;
+}
+
 .sort .lang {
   width: 327px;
   height: 24px;
@@ -462,10 +466,7 @@ footer .contact p {
 
 .sort {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
-  flex-direction: column;
 }
 
 .sort .lang1 {
@@ -845,6 +846,10 @@ footer .submit:active {
     margin-right: 25px;
     width: 447px;
     justify-content: stretch;
+  }
+
+  .sort {
+    padding-left: 37px;
   }
 
   .langu {
