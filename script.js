@@ -7,7 +7,7 @@ menuBar.addEventListener("click", () => {
     menuBar.style.display = "none";
 })
 
-document.querySelectorAll(".Line").forEach(n => n.addEventListener("click", () => {
+document.querySelectorAll(".Line").forEach(n.addEventListener("click", () => {
     menuBar.classList.remove("active");
     toolSocial.classList.remove("active");
     menuBar.style.display = "block";
