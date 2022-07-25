@@ -10,7 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer> </script>
 </head>
 
 <body>
@@ -55,26 +54,8 @@
         </div>
        </section>
     </section>
+    <!-- project 1 -->
     <section class="first-project" id="pro">
-        <div class="snapshot"></div>
-        <div class="content-project1">
-            <h2>W3 project</h2>
-            <div class="ali">
-                <p class="ali1">Ali Ahmad</p><p class="det"> &bull; &nbsp; Back End Dev &nbsp;&bullet;&nbsp; 2020</p>
-            </div>
-            <div class="parg">
-                <p>An open source code for every coding language. W3 school is one the most usefull websites.</p>
-                <div class="see-p">
-                    <ul class="lan">
-                        <li class="lang">html</li>
-                        <li class="lang">css</li>
-                        <li class="lang">javascript</li>
-                    </ul>
-                    <button type="button" class="see-project">See Project</button>
-                </div>
-            </div>
-        </div>
-        
     </section>
     <section class="first-project">
         <div class="content-project1">
@@ -90,7 +71,7 @@
                         <li class="lang">css</li>
                         <li class="lang">javascript</li>
                     </ul>
-                    <button type="button" class="see-project1">See Project</button>
+                    <button type="button" id="btn-1" class="see-project1">See Project</button>
                 </div>
             </div>
         </div>
@@ -111,7 +92,7 @@
                         <li class="lang">css</li>
                         <li class="lang">javascript</li>
                     </ul>
-                    <button type="button" class="see-project2">See Project</button>
+                    <button type="button" id="btn-2" class="see-project2">See Project</button>
                 </div>
             </div>
         </div>
@@ -182,7 +163,36 @@
             </form>
         </div>
     </footer>
-    
+    <div class="popUp">
+        <div class="popHead">
+            <div class="popn">
+            <h2 class="popProj">W3 School</h2>
+            <button class="close-button"> &times;</button>
+            </div>
+            <p class="popName">Ali Ahmad &bull; &nbsp; Back End Dev &nbsp;&bullet;&nbsp; 2020</p>
+        </div>
+        <div class="popPic">
+            
+        </div>
+        <div class="popDet">
+            <div class="popTex"> </div>
+            <div class="popSocial">
+                <ul class="PopList">
+                    <li class="pplist">Html</li>
+                    <li class="pplist">Css</li>
+                    <li class="pplist">javascript</li>
+                </ul>
+                <hr>
+                <div class="live">
+                    <a id="popUpLive" class="popUpBtn" href="#">See Live &nbsp; &nbsp; &nbsp;<img src="images/live.svg" alt="live"></a>
+                    <a id="popUpSource" class="popUpBtn" href="#">See Source  &nbsp; &nbsp;<img src="images/git.svg" alt="git"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js" defer> </script>
+    <script src="test.js"></script>
 </body>
 
 </html>

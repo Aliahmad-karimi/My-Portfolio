@@ -732,6 +732,132 @@ footer .submit:active {
   color: #fff;
 }
 
+.popUp {
+  display: none;
+}
+
+.popUp.active {
+  display: flex;
+  flex-direction: column;
+  width: 343px;
+  height: 713px;
+  position: absolute;
+  background: #fff;
+  border-radius: 16px;
+  align-items: center;
+  padding: 16px;
+  gap: 12px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.popUp .popHead {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: 311px;
+  height: 84px;
+}
+
+.popUp .popHead .popn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popUp .popHead .popn .popProj {
+  font-weight: 700;
+  font-size: 32px;
+  color: #172b4d;
+  width: 259px;
+  height: 36px;
+}
+
+.popUp .popHead .popn .close-button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 2rem;
+  color: #67798e;
+}
+
+.popUp .popHead .popName {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.popUp .popPic {
+  width: 311px;
+  height: 220px;
+  border-radius: 8px;
+  order: 1;
+}
+
+.popUp .popDet {
+  display: flex;
+  flex-direction: column;
+  order: 2;
+  width: 311px;
+  height: 353px;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.popUp .popDet .popTex {
+  width: 311px;
+  height: 220px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #344563;
+}
+
+.popUp .popDet .popSocial {
+  display: flex;
+  flex-direction: column;
+}
+
+.popUp .popDet .popSocial .popList {
+  padding-left: 0;
+}
+
+.popUp .popDet .pplist {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  margin-right: 8px;
+  margin-top: 12px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  color: #6070ff;
+  list-style-type: none;
+}
+
+.popUp .popDet .live {
+  display: flex;
+  justify-content: space-around;
+  height: 56px;
+  width: 311px;
+}
+
+.popUp .popDet .popUpBtn {
+  box-sizing: border-box;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  width: 136px;
+  height: 48px;
+  text-decoration: none;
+  padding: 12px 14px;
+  color: #6070ff;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 25px;
+}
+
 @media only screen and (min-width: 768px) {
   body {
     width: 100%;
@@ -1077,5 +1203,67 @@ footer .submit:active {
     margin-left: 130px;
     flex: none;
     order: 3;
+  }
+
+  .popUp {
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 16px;
+    background: #fff;
+    width: 1156px;
+    height: 1163px;
+  }
+
+  .popUp .popHead {
+    height: 84px;
+    width: 1108px;
+    align-items: flex-start;
+    padding: 24px;
+  }
+
+  .popUp .popHead .popn {
+    height: 40px;
+    width: 1108px;
+    margin-bottom: 16px;
+  }
+
+  .popUp .popHead .popProj {
+    height: 40px;
+    width: 1056px;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .popUp .popHead .close-button {
+    height: 24px;
+    width: 24px;
+    padding-left: 32px;
+  }
+
+  .popUp .popPic {
+    height: 586px;
+    width: 1108px;
+    border-radius: 8px;
+    padding: 24px;
+  }
+
+  .popUp .popDet {
+    flex-direction: row;
+    height: 586px;
+    width: 1108px;
+    padding: 24px;
+    justify-content: space-between;
+  }
+
+  .popup .popDet .popTex {
+    width: 778px;
+    height: 382px;
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  .popup .popDet .popSocial {
+    height: 157px;
+    width: 306px;
   }
 }
