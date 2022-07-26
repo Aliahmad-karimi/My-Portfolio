@@ -110,7 +110,7 @@ popProject3.addEventListener('click', () => {
   popFill(projArr, 3);
 });
 
-
-
-  
+popClose.addEventListener('click', () => {
+  popUp.classList.remove('active');
+}); 
 }});
