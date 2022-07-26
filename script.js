@@ -1,22 +1,18 @@
 // This is menu bar and close button
 const menu = document.querySelector('.menuBar');
 const menuList = document.querySelector('.tool');
+const clos = document.querySelector('.clos-button');
+const lists = document.querySelector('.tool-social');
 
 menu.addEventListener('click', () => {
   menu.classList.toggle('active');
   menuList.classList.toggle('active');
 });
 
-const close = document.querySelector('.clos-button');
-
-close.addEventListener('click', () => {
+clos.addEventListener('click', () => {
   menuList.classList.remove('active');
 });
-
-const lists = document.querySelector('.tool-social');
 
 lists.addEventListener('click', () => {
   menuList.classList.remove('active');
 });
-
-// This is for the pop up windows using the object technic
