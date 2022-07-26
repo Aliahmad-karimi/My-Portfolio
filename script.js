@@ -89,4 +89,10 @@ function popFill(arr, num) {
     pl.classList.add('pplist');
     popList.append(pl);
   });
+
+  popProject.addEventListener('click', () => {
+    popUp.classList.toggle('active');
+    popFill(projArr, 0);
+  });
+  
 }});
