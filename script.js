@@ -89,7 +89,7 @@ function popFill(arr, num) {
     pl.classList.add('pplist');
     popList.append(pl);
   });
-};
+}
 
 popProject.addEventListener('click', () => {
   popUp.classList.toggle('active');
@@ -102,8 +102,8 @@ popProject1.addEventListener('click', () => {
   });
 
 popProject2.addEventListener('click', () => {
-  popUp.classList.toggle('active');
-  popFill(projArr, 2);
+    popUp.classList.toggle('active');
+    popFill(projArr, 2);
 });
 
 popProject3.addEventListener('click', () => {
@@ -113,6 +113,4 @@ popProject3.addEventListener('click', () => {
 
 popClose.addEventListener('click', () => {
   popUp.classList.remove('active');
-});
-
-});
+});});
