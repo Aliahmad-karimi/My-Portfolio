@@ -7,3 +7,7 @@ menu.addEventListener('click', () => {
     menu.classList.toggle('active');
     menuList.classList.toggle('active');
 })
+
+close.addEventListener('click', () => {
+    menuList.classList.remove('active');
+})
