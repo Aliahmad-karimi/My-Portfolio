@@ -119,7 +119,6 @@ popClose.addEventListener('click', () => {
     popUP.classList.remove('active');
 });
 
-/*document.addEventListener('DOMContentLoaded', function() {
-    popFill(projectsArr, 1);
-}, false);
-*/
+// /*document.addEventListener('DOMContentLoaded', function() {
+//     popFill(projectsArr, 1);
+// }, false);
