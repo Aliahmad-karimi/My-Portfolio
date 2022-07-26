@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
       pLive: 'https://aliahmad-karimi.github.io/Porfolio.github.io/',
       pSource: 'https://github.com/Aliahmad-karimi/My-Portfolio',
     },
-     {
+    {
       id: 3,
       pName: 'Grid Game',
       pAuthure: 'Ali Ahmad &nbsp; &bull; &nbsp; Back End Dev &nbsp;&bullet;&nbsp; 2020',
@@ -89,28 +89,25 @@ document.addEventListener('DOMContentLoaded', () => {
       pl.classList.add('pplist');
       popList.append(pl);
     });
-
     popProject.addEventListener('click', () => {  
-    popUp.classList.toggle('active');
-    popFill(projArr, 0);
+      popUp.classList.toggle('active');
+      popFill(projArr, 0);
     });
-
     popProject1.addEventListener('click', () => {  
-    popUp.classList.toggle('active');
-    popFill(projArr, 1);
+      popUp.classList.toggle('active');
+      popFill(projArr, 1);
     });
-
     popProject2.addEventListener('click', () => {  
-    popUp.classList.toggle('active');
-    popFill(projArr, 2);
+      popUp.classList.toggle('active');
+      popFill(projArr, 2);
     });
-
     popProject3.addEventListener('click', () => {
-    popUp.classList.toggle('active');
-    popFill(projArr, 3);
+      popUp.classList.toggle('active');
+      popFill(projArr, 3);
     });
 
     popClose.addEventListener('click', () => {
-    popUp.classList.remove('active');
+      popUp.classList.remove('active');
     }); 
-}});
+  } 
+});
