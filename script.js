@@ -6,8 +6,14 @@ const close = document.querySelector('.clos-button');
 menu.addEventListener('click', () => {
     menu.classList.toggle('active');
     menuList.classList.toggle('active');
-})
+});
 
 close.addEventListener('click', () => {
     menuList.classList.remove('active');
-})
+});
+
+const lists = document.querySelector('.tool-social');
+
+lists.addEventListener('click', () => {
+  menuList.classList.remove('active');
+});
