@@ -105,6 +105,12 @@ function popFill(arr, num) {
     popFill(projArr, 2);
 });
 
+popProject3.addEventListener('click', () => {
+  popUp.classList.toggle('active');
+  popFill(projArr, 3);
+});
+
+
 
   
 }});
