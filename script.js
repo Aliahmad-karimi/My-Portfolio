@@ -89,28 +89,4 @@ function popFill(arr, num) {
     pl.classList.add('pplist');
     popList.append(pl);
   });
-}
-
-popProject.addEventListener('click', () => {
-  popUp.classList.toggle('active');
-  popFill(projArr, 0);
-});
-
-popProject1.addEventListener('click', () => {
-    popUp.classList.toggle('active');
-    popFill(projArr, 1);
-  });
-
-popProject2.addEventListener('click', () => {
-    popUp.classList.toggle('active');
-    popFill(projArr, 2);
-});
-
-popProject3.addEventListener('click', () => {
-  popUp.classList.toggle('active');
-  popFill(projArr, 3);
-});
-
-popClose.addEventListener('click', () => {
-  popUp.classList.remove('active');
-});});
+}});
