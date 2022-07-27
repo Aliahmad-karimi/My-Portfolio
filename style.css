@@ -1212,7 +1212,8 @@ footer .submit:active {
     border-radius: 16px;
     background: #fff;
     width: 1156px;
-    height: 950px;
+    height: 850px;
+    overflow-y: scroll;
   }
 
   .popUp .popHead {
