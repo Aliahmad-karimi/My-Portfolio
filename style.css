@@ -738,7 +738,6 @@ footer .submit:active {
 .popUp.active {
   position: fixed;
   top: 10px;
-  height: 713px;
   display: flex;
   flex-direction: column;
   background: #fff;
@@ -746,7 +745,7 @@ footer .submit:active {
   align-items: center;
   padding: 16px 18px;
   font-family: 'Poppins', sans-serif;
-  justify-content: space-around;
+  justify-content: space-between;
   z-index: 10;
 }
 
@@ -756,6 +755,7 @@ footer .submit:active {
   align-items: flex-start;
   width: 311px;
   height: 100px;
+  justify-content: center;
   margin-bottom: 12px;
 }
 
@@ -856,7 +856,6 @@ footer .submit:active {
   color: #6070ff;
   font-size: 15px;
   text-align: center;
-  margin-top: 25px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1213,7 +1212,7 @@ footer .submit:active {
     border-radius: 16px;
     background: #fff;
     width: 1156px;
-    height: 1163px;
+    height: 950px;
   }
 
   .popUp .popHead {
@@ -1228,7 +1227,7 @@ footer .submit:active {
   .popUp .popHead .popn {
     height: 40px;
     width: 1108px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
 
   .popUp .popHead .popProj {
