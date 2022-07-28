@@ -129,5 +129,12 @@ document.addEventListener('DOMContentLoaded', () => {
       return true;
     }
   };
+  contForm.addEventListener('submit', (event) => {
+    if(checkEmail == false){
+      event.preventDefault();
+    }
+    checkEmail(emailForm.value);
+  })
+
 
 });
