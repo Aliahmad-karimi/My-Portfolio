@@ -17,3 +17,10 @@ function checkEmail(input) {
     return true;
   }
 };
+
+contForm.addEventListener('submit', (event) => {
+    if(checkEmail == false){
+      event.preventDefault();
+    }
+    checkEmail(emailForm.value);
+  })
