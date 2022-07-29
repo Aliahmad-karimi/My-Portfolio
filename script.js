@@ -173,7 +173,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   setDataFirst();
   if (localStorage.getItem('data') !== null) {
-    getFormStorage();  }
+    getFormStorage();
+  }
 
   firstName.addEventListener('input', () => {
     populateStorage();
