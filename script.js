@@ -126,13 +126,18 @@ document.addEventListener('DOMContentLoaded', () => {
     if (input === low) {
       vError.innerText = 'Submitted Succesfully';
       vError.className = 'alert success';
+      setTimeout(() => {
+        contForm.submit();
+      },
+      5000);
     }
     return true;
   }
   contForm.addEventListener('submit', (event) => {
-    if (checkEmail === false) {
+    if (checkEmail(emailForm.value) === false) {
       event.preventDefault();
+    } else {
+      event.run();
     }
-    checkEmail(emailForm.value);
   });
 });
