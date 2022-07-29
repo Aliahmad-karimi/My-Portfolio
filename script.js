@@ -161,8 +161,8 @@ document.addEventListener('DOMContentLoaded', () => {
   function getFormStorage() {
     const reFill = JSON.parse(localStorage.getItem('data'));
     firstName.value = reFill.fName;
-    emailAdd.value = reFill.email;
-    sms.value = reFill.msg;
+    emailAdd.value = reFill.fEmail;
+    sms.value = reFill.fMsg;
   }
 
   function setDataFirst() {
@@ -171,8 +171,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  getFormStorage();
   setDataFirst();
+  getFormStorage();
 
   firstName.addEventListener('input', () => {
     populateStorage();
