@@ -166,12 +166,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function setDataFirst() {
-    if (localStorage.getItem('data') !== null) {
-      getFormStorage();    }
+    if (localStorage.getItem('data') === null) {
+      localStorage.setItem('data', JSON.stringify(storageForm));
+    }
   }
 
   setDataFirst();
-  getFormStorage();
+  if (localStorage.getItem('data') !== null) {
+    getFormStorage();  }
 
   firstName.addEventListener('input', () => {
     populateStorage();
