@@ -140,4 +140,49 @@ document.addEventListener('DOMContentLoaded', () => {
       event.run();
     }
   });
+  // Local storage for the form
+  const firstName = document.getElementById('name');
+  const emailAdd = document.getElementById('email');
+  const sms = document.getElementById('msg');
+
+  const storageForm = {
+    fName: '',
+    fEmail: '',
+    fMsg: '',
+  };
+
+  function populateStorage() {
+    storageForm.fName = firstName.value;
+    storageForm.fEmail = emailAdd.value;
+    storageForm.fMsg = sms.value;
+    localStorage.setItem('data', JSON.stringify(storageForm));
+  }
+
+  function getFormStorage() {
+    const reFill = JSON.parse(localStorage.getItem('data'));
+    firstName.value = reFill.fName;
+    emailAdd.value = reFill.fEmail;
+    sms.value = reFill.fMsg;
+  }
+
+  function setDataFirst() {
+    if (localStorage.getItem('data') === null) {
+      localStorage.setItem('data', JSON.stringify(storageForm));
+    }
+  }
+
+  setDataFirst();
+  if (localStorage.getItem('data') !== null) {
+    getFormStorage();
+  }
+
+  firstName.addEventListener('input', () => {
+    populateStorage();
+  });
+  emailAdd.addEventListener('input', () => {
+    populateStorage();
+  });
+  sms.addEventListener('input', () => {
+    populateStorage();
+  });
 });
